@@ -17,6 +17,9 @@
     grid-area: head;
     background-color: #e4e7f8;
     border: none;
+    font-size: 3.5em;
+    font-weight: normal;
+    padding-left: 35px;
 
 
 }
@@ -131,4 +134,4 @@ body button {
 }
 
 
-/*https://developer.mozilla.org/es/docs/Web/CSS/grid-template-areas*/
+

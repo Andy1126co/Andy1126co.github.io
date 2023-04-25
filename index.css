@@ -40,7 +40,7 @@
 }
 
 #page article:empty {
-    background: url("img/Muñeco.png") center no-repeat, url("img/mensaje.png") 50% 75% no-repeat, url("img/Rectangle.png");
+    background: url("Muñeco.png") center no-repeat, url("mensaje.png") 50% 75% no-repeat, url("Rectangle.png");
 }
 
 #page article:empty button {

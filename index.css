@@ -1,0 +1,134 @@
+#page {
+    display: grid;
+    width: clamp(600px, 100%, 1900px);
+    height: 100%;
+    margin: 20px auto auto;
+    grid-template-areas: "head nav"
+                       "main  nav"
+                       "foot  foot";
+    grid-template-rows: 50px 900px 70px;
+    grid-template-columns: 75% 1fr;
+    background-color: #e4e7f8;
+    padding: 10px;
+
+}
+
+#page > header {
+    grid-area: head;
+    background-color: #e4e7f8;
+    border: none;
+
+
+}
+
+
+#page > article {
+    grid-area: nav;
+    background: #FFFFFF;
+    background-size: 70%;
+    /*background-repeat: no-repeat;*/
+    /*background-position: 50% 50%;*/
+    border-radius: 32px;
+    width: 400px;
+    height: 940px;
+    padding: 40px 40px 40px 0;
+    margin-right: 40px;
+
+    text-align: center;
+
+
+}
+
+#page article:empty {
+    background: url("img/Muñeco.png") center no-repeat, url("img/mensaje.png") 50% 75% no-repeat, url("img/Rectangle.png");
+}
+
+#page article:empty button {
+    opacity: 50%;
+}
+
+#page > main {
+    grid-area: main;
+
+}
+
+body main label {
+    border: none;
+}
+
+
+#page > footer {
+    grid-area: foot;
+    background-color: #e4e7f8;
+    width: 90%;
+}
+
+body textarea {
+    border: none;
+    width: 99.5%;
+    text-justify: auto;
+    text-align: center;
+    font-size: 32px;
+    font-family: Inter, serif;
+    font-style: normal;
+    line-height: 150%;
+    color: #0A3871;
+    background-color: #e4e7f8;
+    height: 850px;
+    background-image: url("img/Ingrese el texto aqui.png");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+
+
+}
+
+body textarea:focus {
+    background-image: none;
+
+}
+
+.botones {
+
+    width: clamp(1800px, 100%, 1900px);
+    height: 100px;
+    left: 240px;
+    margin-left: 10px;
+
+    background: none;
+
+
+}
+
+body button {
+    border-radius: 24px;
+    background: #0A3871;
+    width: 328px;
+    height: 67px;
+    color: #FFFFFF;
+    font-size: 1em;
+    margin-left: 10px;
+}
+
+#boton_desencriptar, #boton_copiar {
+    background: #D8DFE8;
+    border: 1px solid #0A3871;
+    color: #0A3871;
+    margin-left: 148px;
+
+
+}
+
+#boton_desencriptar:active, #boton_copiar:active, #boton_encriptar:active {
+    box-shadow: 2px 2px 5px #0A3871;
+}
+
+#boton_copiar {
+    margin-left: 36%;
+}
+
+#page footer {
+    background: none;
+}
+
+
+/*https://developer.mozilla.org/es/docs/Web/CSS/grid-template-areas*/

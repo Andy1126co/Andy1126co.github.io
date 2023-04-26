@@ -1,6 +1,6 @@
 #page {
     display: grid;
-    width: clamp(600px, 100%, 1900px);
+    width: 920px;
     height: 100%;
     margin: 20px auto auto;
     grid-template-areas: "head nav"

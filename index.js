@@ -38,6 +38,7 @@ function copiar_articulo() {
     navigator.clipboard.writeText(copiar);
     limpiar_articulo();
     boton_invisible();
+    limpiar_textarea();
 
 }
 
@@ -81,15 +82,15 @@ function verificar_contenido() {
         textarea.value = texto.replace(/[^a-zA-Z0-9\s]/g, "");
     }
 }
-//
-// document.addEventListener('DOMContentLoaded', boton_invisible);
-// textarea.addEventListener('input', verificar_contenido);
-//
-// boton_encriptar.addEventListener("click", enviar);
-// boton_encriptar.addEventListener("click", boton_visible);
-// boton_encriptar.addEventListener('click', limpiar_textarea);
-// boton_copiar.addEventListener('click', copiar_articulo);
-// boton_des_encriptar.addEventListener('click', devolver);
+
+document.addEventListener('DOMContentLoaded', boton_invisible);
+textarea.addEventListener('input', verificar_contenido);
+
+boton_encriptar.addEventListener("click", enviar);
+boton_encriptar.addEventListener("click", boton_visible);
+boton_encriptar.addEventListener('click', limpiar_textarea);
+boton_copiar.addEventListener('click', copiar_articulo);
+boton_des_encriptar.addEventListener('click', devolver);
 
 
 
